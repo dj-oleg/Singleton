@@ -40,7 +40,9 @@ print("Id of c1 : {}".format(str(id(c1))))
 print("Id of c2 : {}".format(str(id(c1))))
 
 print("c1 is c2 ? " + str(c1 is c2))
-myresult = DBConnection.__str__
+
+
+myresult = DBConnection.__str__()
 myresult2 = myresult.fetchall()
 for x in myresult2:
     print(x)
